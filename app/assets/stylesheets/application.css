@@ -11,3 +11,75 @@
  *= require_self
  *= require_tree .
  */
+.container {
+	width: 710px;
+}
+
+body {
+	background: #33CCCC
+}
+
+header {
+	padding-top: 20px;
+}
+
+section {
+	margin-top: 1em;
+	font-size: 120%;
+	padding: 20px;	
+	background: #fff;
+}
+
+nav {
+	float: right;
+}
+
+nav {
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.pic {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+.nave {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+
+}
+.main {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;	
+}
+
+search {
+	float: right;
+	background-color: white;
+	padding:  0 0.7em;
+}
