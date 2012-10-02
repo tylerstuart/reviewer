@@ -1,0 +1,11 @@
+<% provide(:title, 'All Restaurants') %>
+<h1>Restaurants</h1>
+  <div class="restaurants">
+  	<ul class="rest">
+  	  <% @restaurants.each do |restaurants| %>
+  	    <li>
+  	  	  <%= link_to restaurants.name, restaurants %>
+  	    </li>
+  	  <% end %>  
+  	</ul>
+  </div>

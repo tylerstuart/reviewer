@@ -1,5 +1,5 @@
 Reviewer::Application.routes.draw do
-  get "restaurants/new"
+  resources :restaurants
 
   root            :to => 'static_pages#home' 
   match "/help",  :to => 'static_pages#help'
