@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'bootstrap-sass'
+gem 'geocoder'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'

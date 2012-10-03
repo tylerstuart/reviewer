@@ -10,3 +10,6 @@
   	<h3><%= @restaurant.phone %></h3>
   </ul>
 </div>
+
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@restaurant.latitude}%2C#{@restaurant.longitude}" %>
+

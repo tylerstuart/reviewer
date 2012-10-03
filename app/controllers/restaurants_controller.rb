@@ -4,10 +4,14 @@ class RestaurantsController < ApplicationController
   end
 
   def show
-    @restaurant = Restaurant.find(params[:id]) 
+    @restaurant = Restaurant.find(params[:id])
   end
 
   def index
-  	@restaurants = Restaurant.all 
+  	if params[:search].present?
+      @restaurants = Restaurant.near(params[:search], 50, :order => :distance)
+  	else
+  	  @restaurants = Restaurant.all
+  	end 
   end
 end

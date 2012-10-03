@@ -1,5 +1,13 @@
 <% provide(:title, 'All Restaurants') %>
 <h1>Restaurants</h1>
+
+<%= form_tag restaurants_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search Near", :name => nil %>
+  </p>
+<% end %>
+
   <div class="restaurants">
   	<ul class="rest">
   	  <% @restaurants.each do |restaurants| %>
@@ -9,3 +17,4 @@
   	  <% end %>  
   	</ul>
   </div>
+  
