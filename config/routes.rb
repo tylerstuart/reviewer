@@ -1,4 +1,6 @@
 Reviewer::Application.routes.draw do
+  get "users/new"
+
   resources :restaurants
 
   root            :to => 'static_pages#home' 
