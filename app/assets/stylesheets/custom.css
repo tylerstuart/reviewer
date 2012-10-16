@@ -113,7 +113,10 @@ nav ul li a:hover {
 
 .rest_header {
 	background-color: white;
-	padding: 5px;
+	vertical-align: middle;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 1px;
 }
 
 /* ads */
