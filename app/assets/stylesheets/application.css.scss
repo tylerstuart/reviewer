@@ -19,8 +19,17 @@ body {
 	background: #B0B0B0;
 }
 
-header {
+#header {
 	padding-top: 20px;
+  margin: 10px;
+  
+  search {
+  float: left;
+  background-color: white;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;  
+  }
 }
 
 section {
@@ -61,6 +70,7 @@ nav ul li a:hover {
 }
 
 .pic {
+  float: left;
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;
@@ -76,15 +86,6 @@ nav ul li a:hover {
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;	
-}
-
-search {
-	float: right;
-	background-color: white;
-	padding:  20px 100px;
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;  
 }
 
 .round {

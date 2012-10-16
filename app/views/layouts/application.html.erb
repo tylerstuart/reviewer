@@ -2,20 +2,37 @@
 <html>
 <head>
   <title>Revbundle | <%= yield(:title) %></title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+  <%= stylesheet_link_tag 'blueprint/screen', :media => 'print' %>
+  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+  <%= stylesheet_link_tag 'custom', :media => 'screen' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="container">
-    <header>
-      <%= image_tag("rails.png", :alt => "Revbundle", :class => "pic") %>
-      <search class="search">
-      	<%= text_field_tag :search, params[:search], :class => "round", :placeholder => "search" %>
-      	<%= submit_tag "Search", :name => nil %>
-      </search>
+    <header class="round">
+       <table class="main_head"> 
+        <tr>
+          <td class="bund_img">
+            <h1>
+              <%= image_tag("rails.png", :alt => "Revbundle", :class => "pic") %> 
+              Revbundle
+            </h1>
+          </td>
+          <td class="bund_search">
+              <%= text_field_tag :search, params[:search], :class => "round", :placeholder => "search" %>
+      	      <%= submit_tag "Search", :name => nil %>
+          </td>
+          <td class="sign_up">
+            <% if !signed_in? %>
+            <%= link_to "Sign up now", signup_path, :class => "signup_button round" %>
+            <% end %>
+          </td>
+        </tr>
+      </table>
     </header>
-    <nav class="nave">
+    <nav class="round">
       <ul>
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
@@ -31,9 +48,26 @@
         <% end %>  
       </ul>
     </nav>
-    <section class="main">	
-      <%= yield %>
-    </section>
-  </div>
+
+    <table class="profile" summary="Restaurant information"
+      <tr>
+        <td class="sidebar round">
+          <h1>
+            ads
+          </h1>
+        </td>
+        <td class="main"
+          <h1>
+            <%= yield %>
+          </h1>
+        </td>
+        <td class="sidebar round">
+          <h1>
+            ads
+          </h1>
+        </td>
+      </tr>
+    </table>
+  </div>  
 </body>
 </html>

@@ -1,20 +1,21 @@
 <% provide(:title, 'All Restaurants') %>
-<h1>Restaurants</h1>
+<div class="rest_header round">
+  <h1>
+    Restaurants
+    <span class="rest_search">
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search Near", :name => nil %>
+    </span>
+  </h1>
+</div>
 
-<%= form_tag restaurants_path, :method => :get do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search Near", :name => nil %>
-  </p>
-<% end %>
-
-  <div class="restaurants">
-  	<ul class="rest">
+  <span class="restaurants">
+  	<ul>
   	  <% @restaurants.each do |restaurants| %>
-  	    <li>
+  	    <li class="round">
   	  	  <%= link_to restaurants.name, restaurants %>
   	    </li>
   	  <% end %>  
   	</ul>
-  </div>
+  </span>
   

@@ -1,0 +1,138 @@
+.container {
+	width: 1000px;
+}
+
+body {
+	background: #B0B0B0;
+}
+
+/* header */
+
+header {
+    background: #fff;
+}
+
+td.bund_img {
+    width: 30%;
+}
+
+td.bund_search {
+	width: 30%;
+    text-align: center;
+}
+
+td.sign_up {
+	width: 30%;
+	text-align: center;
+}
+
+a.signup_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 75px;
+  color: #fff;
+  background: blue;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+}
+
+section {
+	width: 720px !important;
+	margin-top: 1em;
+	font-size: 120%;
+	padding: 20px;
+
+}
+
+/* Navigation */
+
+nav {
+	background-color: white;
+	padding: 0 0.7em;
+	white-space: nowrap;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0.2em 0;
+}
+
+nav ul li a {
+	padding: 0 5px;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+/* Restaurants */
+
+.restaurants ul li {
+	list-style-type: none;
+	border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    margin: 1px;
+    background-color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.restaurants ul {
+	margin: 0 1em 0 0;
+	padding-left: 0em;
+}
+.restaurants ul li a:link {
+	text-decoration: none;
+}
+
+.rest_search {
+	float: right;
+}
+
+.rest_header {
+	background-color: white;
+	padding: 5px;
+}
+
+/* ads */
+
+table.profile {
+	width: 1000px;
+	margin-bottom: 0;
+}
+
+td.main {
+    width: 60%;
+    padding: 0 4px 0px 4px;
+}
+
+td.sidebar {
+	width: 20%;
+	padding: 1em;
+	vertical-align: top;
+	background-color: white;
+}
+
+
